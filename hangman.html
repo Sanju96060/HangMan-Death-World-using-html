@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hangman Death Game</title>
+   <link rel="stylesheet" href="hangman.css" />
+</head>
+<body>
+  <img class="background-image" src="img.jpg" alt="Hangman Background">
+  <div class="overlay"></div>
+  
+  <h1><b>HANGMAN DEATH</b></h1>
+  <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+  <div class="word" id="wordDisplay">_ _ _ _</div>
+  <div class="letters" id="letterButtons"></div>
+  <div class="message" id="message"></div>
+
+  <div id="controls">
+    <button id="restartBtn" style="display:none;" onclick="restartGame()">🔄 Restart</button>
+    <button id="homeBtn" style="display:none;" onclick="goHome()">🏠 Home</button>
+  </div>
+  <script src="hangman.js"></script>
+
+</body>
+</html>
